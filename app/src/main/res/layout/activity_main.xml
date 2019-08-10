@@ -126,9 +126,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tabbar"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="0dp"
-        android:textAllCaps="false"
-        >
+        android:layout_marginBottom="55dp"
+        android:textAllCaps="false">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -697,28 +698,30 @@
     </ScrollView>
 
 
-    <com.google.android.material.bottomappbar.BottomAppBar
+    <android.support.design.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
-        style="@style/Widget.MaterialComponents.BottomAppBar"
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
+        app:fabAlignmentMode="center"
+        app:navigationIcon="@drawable/menu"
+        android:background="@drawable/elips"
         android:theme="@style/BottomMenuColor"
-        app:backgroundTint="@color/colorPrimary"
-        app:fabAttached="true"
         app:fabCradleRoundedCornerRadius="16dp"
-        app:navigationIcon="@drawable/share"
-        tools:ignore="BottomAppBar"></com.google.android.material.bottomappbar.BottomAppBar>
+        tools:ignore="BottomAppBar" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/share"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/add"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:elevation="5dp"
         app:fabSize="normal"
         app:layout_anchor="@+id/bottomAppBar" />
 

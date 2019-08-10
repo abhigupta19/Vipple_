@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:id="@+id/botton_app_home"
-        android:title="Home"
-        android:icon="@drawable/ic_home_black_24dp"
-        app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/bottom_item2"
-        android:title="More"/>
 
-    <item android:id="@+id/bottom_item3"
-        android:title="Log Out"/>
+
+    <item
+        android:id="@+id/bottom_item2"
+        android:icon="@drawable/message"
+        android:title="l"
+        app:showAsAction="ifRoom" />
+
+
 
 </menu>
