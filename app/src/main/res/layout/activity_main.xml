@@ -96,6 +96,7 @@
                     android:fontFamily="@font/g"
                     android:gravity="center_horizontal"
                     android:lines="1"
+                    android:onClick="challange"
                     android:text="Caigns"
                     android:textColor="#ff666666"
                     android:textSize="16sp" />

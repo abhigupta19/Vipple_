@@ -2,6 +2,7 @@ package com.sar.user.vipple_;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -33,6 +34,11 @@ public class MainActivity extends AppCompatActivity {
         spaceNavigationView.addSpaceItem(new SpaceItem("",R.drawable.home));
 
     }
+     public void challange(View view)
+     {
+         startActivity(new Intent(MainActivity.this,Challange.class));
+     }
+
 
 
 }
